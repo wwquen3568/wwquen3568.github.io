@@ -1,0 +1,22 @@
+.terminal-error-end-container {
+  margin-top: 20px; /* Space above the terminal block */
+}
+
+.terminal-error-end {
+  background-color: #1e1e1e; /* Dark background for terminal look */
+  color: #ff0000; /* Green text for terminal style */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333; /* Subtle border */
+  font-family: 'Courier New', Courier, monospace; /* Monospace font for terminal feel */
+  font-size: 14px;
+}
+
+.terminal-error-end strong {
+  color: #ff5555; /* Red color for EOF */
+}
+
+.terminal-error-end small {
+  color: #aaaaaa; /* Lighter color for additional info */
+  font-size: 12px;
+}

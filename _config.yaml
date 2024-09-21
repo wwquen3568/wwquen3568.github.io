@@ -6,6 +6,9 @@ description: "my shitpost status."
 url: "https://wwquen3568.github.io"
 baseurl: ""  # Leave empty for user/organization GitHub Pages
 
+# show futre posts.
+future: true
+
 # Theme-related settings
 paginate: 50  # Number of posts per page
 paginate_path: "/page:num/"
@@ -14,9 +17,12 @@ theme: null  # We're using a custom theme, so leave this as null
 style: hacker
 header_pages:
   - index.md
-  - about.md
+  - header_pages/dev.md
+  - header_pages/shitpost.md
+  - header_pages/changelog.md
+  
 
-footer: 'Visit My Github! https://github.com/wwquen3568'
+footer: 'visit my <a href="https://github.com/wwquen3568">@github</a>!'
 
 # Optional social links
 email: "wwquen3568@marketian.com"

@@ -2,4 +2,22 @@
 layout: default
 ---
 
+{%- if page.categories.size > 0 -%}
+    <a href="/{{ page.categories[0] }}/">
+        << Go back to {{ page.categories[0] | capitalize }}
+    </a> <!-- Link to the first category's page -->
+    <br><br><br>
+{%- endif -%}
+
+<!-- Main content rendered here -->
+<!-- Main content rendered here with Enter symbol -->
 {{ content }}
+
+<!-- Terminal-style output at the bottom -->
+<div class="terminal-output-end-container">
+    <pre class="terminal-output-end">
+>>> process completed successfully
+<strong>EOF</strong> &nbsp;
+<small><i>this is the end of content...</i></small>
+    </pre>
+</div>

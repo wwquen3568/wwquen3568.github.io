@@ -1,0 +1,23 @@
+.terminal-output-end-container {
+  margin-top: 20px; /* Space above the terminal block */
+}
+
+.terminal-output-end {
+  background-color: #1e1e1e; /* Dark background for terminal look */
+  color: #00ff00; /* Green text for terminal style */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333; /* Subtle border */
+  font-family: 'Courier New', Courier, monospace; /* Monospace font for terminal feel */
+  font-size: 14px;
+}
+
+.terminal-output-end strong {
+  color: #FF8C00; /* Red color for EOF */
+}
+
+.terminal-output-end small {
+  color: #aaaaaa; /* Lighter color for additional info */
+  font-size: 12px;
+}
+

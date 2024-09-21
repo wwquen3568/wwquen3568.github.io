@@ -1,0 +1,14 @@
+/* Style for the date part, green like Loguru's debug */
+.loguru-date {
+    color: #ffffff; /* Green */
+}
+
+/* Style for the category part, blue like Loguru's info */
+.loguru-category {
+    color: #FFD700; /* Dodger Blue */
+}
+
+/* Style for the title part, yellow like Loguru's warning */
+.loguru-title {
+    color: #00FF00; /* Gold */
+}

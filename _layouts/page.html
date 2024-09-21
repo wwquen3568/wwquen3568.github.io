@@ -2,4 +2,37 @@
 layout: default
 ---
 
+<h1>{{ page.title }}</h1>
+
 {{ content }}
+{% assign contentwonl = content | strip_newlines %}
+{% unless contentwonl == "" %}
+  <br />
+{% endunless %} <!-- add line break if there is any content -->
+
+{%- assign category_name = page.category -%}
+
+{%- if site.categories[category_name].size > 0 -%}
+  <ul>
+    {%- assign sorted_posts = site.categories[category_name] | sort: 'date' | reverse -%} <!-- Sort posts by date in descending order -->
+    {%- for post in sorted_posts -%}
+    <li>
+      {%- assign date_format = "%Y-%m-%d %H:%M" -%} <!-- Updated to show date with time -->
+      <span class="loguru-date">[ {{ post.date | date: date_format }} ]</span>
+      <span class="loguru-category">({{ post.category }})</span>
+      <a href="{{ post.url | relative_url }}" class="loguru-title">{{ post.title | escape }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+{%- else -%}
+
+<!-- Python-like Error Message styled similarly to EOF output -->
+<div class="terminal-output-error-container">
+    <pre class="terminal-error-end">
+>>> error: process failed
+<strong style="font-weight: bold; color: #ff5555;">NoCategoryPostFoundError</strong> &nbsp;
+<small><i>no posts found in this category...</i></small>
+    </pre>
+</div>
+
+{%- endif -%}
