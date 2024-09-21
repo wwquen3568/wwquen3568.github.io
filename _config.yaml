@@ -3,15 +3,19 @@
 # Site configuration
 title: "Devs' Shitposts."
 description: "my Shitpost status."
-baseurl: "" # Don't use this for GitHub Pages
-url: "https://your-username.github.io"
+url: "https://wwquen3568.github.io"
+baseurl: ""  # Leave empty for user/organization GitHub Pages
 
-# Theme settings
-remote_theme: b2a3e8/jekyll-theme-console
-plugins:
-  - jekyll-remote-theme
+# Theme-related settings
+paginate: 5  # Number of posts per page
+theme: null  # We're using a custom theme, so leave this as null
 
-# Social links (Optional)
-email: "your-email@example.com"
-twitter: "your_twitter_username"
-github: "your_github_username"
+# Optional social links
+email: "wwquen3568@marketian.com"
+github: "wwquen3568"
+# twitter: "your_twitter_username"
+
+
+# Exclude folders from the build
+exclude:
+  - assets/
