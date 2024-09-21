@@ -1,21 +1,36 @@
 # _config.yml
 
 # Site configuration
-title: "Devs' Shitposts."
+title: "Dev's Shitpost Status"
 description: "my Shitpost status."
 url: "https://wwquen3568.github.io"
 baseurl: ""  # Leave empty for user/organization GitHub Pages
 
 # Theme-related settings
-paginate: 5  # Number of posts per page
+paginate: 50  # Number of posts per page
+paginate_path: "/page:num/"
 theme: null  # We're using a custom theme, so leave this as null
+
+style: hacker
+header_pages:
+  - index.md
+  - about.md
+
+footer: 'Visit My Github! https://github.com/wwquen3568'
 
 # Optional social links
 email: "wwquen3568@marketian.com"
 github: "wwquen3568"
 # twitter: "your_twitter_username"
 
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
 
 # Exclude folders from the build
 exclude:
-  - assets/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  # - assets/
