@@ -1,0 +1,17 @@
+# _config.yml
+
+# Site configuration
+title: "Devs' Shitposts."
+description: "my Shitpost status."
+baseurl: "" # Don't use this for GitHub Pages
+url: "https://your-username.github.io"
+
+# Theme settings
+remote_theme: b2a3e8/jekyll-theme-console
+plugins:
+  - jekyll-remote-theme
+
+# Social links (Optional)
+email: "your-email@example.com"
+twitter: "your_twitter_username"
+github: "your_github_username"
