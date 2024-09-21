@@ -2,7 +2,7 @@
 
 # Site configuration
 title: "Dev's Shitpost Status"
-description: "my Shitpost status."
+description: "my shitpost status."
 url: "https://wwquen3568.github.io"
 baseurl: ""  # Leave empty for user/organization GitHub Pages
 
