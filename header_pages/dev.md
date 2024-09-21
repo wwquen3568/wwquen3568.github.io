@@ -1,6 +1,7 @@
 ---
 title: DEV
 layout: page
+category: dev
 permalink: /dev/
 ---
 

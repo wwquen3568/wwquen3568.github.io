@@ -5,6 +5,7 @@ layout: default
 <h1>{{ page.title }}</h1>
 
 {{ content }}
+
 {% assign contentwonl = content | strip_newlines %}
 {% unless contentwonl == "" %}
   <br />
@@ -13,18 +14,26 @@ layout: default
 {%- assign category_name = page.category -%}
 
 {%- if site.categories[category_name].size > 0 -%}
-  <strong>POSTS</strong>
   <ul>
     {%- assign sorted_posts = site.categories[category_name] | sort: 'date' | reverse -%} <!-- Sort posts by date in descending order -->
     {%- for post in sorted_posts -%}
-    <li>
-      {%- assign date_format = "%Y-%m-%d %H:%M" -%} <!-- Updated to show date with time -->
-      <span class="loguru-date">[ {{ post.date | date: date_format }} ]</span>
-      <span class="loguru-category">({{ post.category }})</span>
-      <a href="{{ post.url | relative_url }}" class="loguru-title">{{ post.title | escape }}</a>
-    </li>
+      {{ post.content }}
+      <br><br>
+      ......................................
+      <br><br>
+
     {%- endfor -%}
   </ul>
+
+  <!-- Terminal-style output at the bottom -->
+  <div class="terminal-output-end-container">
+    <pre class="terminal-output-end">
+  >>> process completed successfully
+  <strong>EOF</strong> &nbsp;
+  <small><i>this is the end of content...</i></small>
+    </pre>
+  </div>
+
 {%- else -%}
 
 <!-- Python-like Error Message styled similarly to EOF output -->

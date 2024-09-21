@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My First Shit Post 💩💩💩"
-date: 2024-09-21 10:00:00 +0000
+date: 2024-09-21 10:00:00 +0900
 category: shitpost
 
 ---

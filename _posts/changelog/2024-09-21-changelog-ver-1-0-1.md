@@ -7,5 +7,4 @@ category: changelog
 ---
 
 # What's Next?
-- [ ] font changes.
-- [ ] different styling for h tags(h1, h2, ...) based on console styles.
+- [ ] I'm thinking ...

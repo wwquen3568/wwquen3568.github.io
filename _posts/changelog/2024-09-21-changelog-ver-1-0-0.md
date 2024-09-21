@@ -14,7 +14,7 @@ category: changelog
 - Implemented the **Console theme** based on [jekyll-theme-console](https://github.com/b2a3e8/jekyll-theme-console).
 - Customized the **hacker style** theme.
 - Added **categories**(HOME, DEV, SHITPOST, CHANGELOG)
-- Created **index.md as the initial landing page.
+- Created **index.md** as the initial landing page.
 
 ### Fixed
 - Resolved issue with administrator permissions to run the **gem** command.

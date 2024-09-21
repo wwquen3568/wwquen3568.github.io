@@ -19,6 +19,7 @@ header_pages:
   - index.md
   - header_pages/dev.md
   - header_pages/shitpost.md
+  - header_pages/gallery.md
   - header_pages/changelog.md
   
 
