@@ -10,7 +10,7 @@ baseurl: ""  # Leave empty for user/organization GitHub Pages
 future: true
 
 # Theme-related settings
-paginate: 50  # Number of posts per page
+paginate: 20  # Number of posts per page
 paginate_path: "/page:num/"
 theme: null  # We're using a custom theme, so leave this as null
 
