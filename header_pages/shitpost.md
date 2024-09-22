@@ -1,13 +1,13 @@
 ---
 title: SHITPOST
-layout: page
+layout: shitpost
 category: shitpost
 permalink: /shitpost/
 ---
 
-# Shitposts Status <br>
+
+# What is shitpost? 
 ( •̀ ω •́ )✧
-What is shitpost?
 
 For the blind, it is the vision.
 For the hungry, it is the feast.
